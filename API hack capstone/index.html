@@ -1,0 +1,67 @@
+<!-- psedo code here -->
+<!-- an web app that allow users to track all the upcoming launches, with an emphasize on the next launch -->
+<!-- https://api.spacexdata.com/v3/launches/upcoming -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SPACEX TRACKER</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YouTube video finder</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SPACEX TRACKER</h1>
+
+        <form id="js-form">
+          <!-- <div id ="js-parkCode">
+            <label for="parkCode">Park Code</label>
+            <button id="add_parkcode_button">Add More Codes</button>
+            <input type="text" name="parkCode" class="js-park-code">
+          </div>
+          <div id="js-stateCode">
+            <label for="stateCode">State Code</label>
+            <button id="add_statecode_button">Add More Codes</button>
+            <input type="text" name="stateCode" class="js-state-code">
+          </div>
+
+            <label for="limit">Number of results</label>
+            <input type="number" name="max-results" id="js-max-results" value="10"> -->
+
+            <select name="rockets">
+                <option value="All">All</option>
+                <option value="falcon9">Falcon 9</option>
+                <option value="falconheavy">Falcon Heavy</option>
+            </select>
+                  
+
+
+            <input id="launch" type="submit" value="LAUNCH">
+            
+            <!-- <button id ="clear">Start a new search</button> -->
+            <!-- <button id="try">start</button> -->
+        </form>
+
+        <p id="js-error-message" class="error-message"></p>
+        <section id="results" class="hidden">
+          <h2>Search results</h2>
+          <div id="results-list">
+                <!-- <div class= "next title">Next Launch</div>
+                <button class="next launch_entry">
+                    <h2 class="mission_name"></h2>
+                    <p class="vehical"></p>
+                    <p class="launch_date"></p>
+                </button> -->
+          </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
